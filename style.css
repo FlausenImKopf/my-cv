@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+html {
+  font-family: "Dosis", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Lato", sans-serif;
+}
+.banner,
+main {
+  padding: 25px;
+}
+.banner {
+  text-align: center;
+  background-color: aliceblue;
+  padding: 30px;
+}
