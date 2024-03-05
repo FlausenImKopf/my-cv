@@ -12,12 +12,32 @@ h2,
 h3 {
   font-family: "Lato", sans-serif;
 }
-.banner,
+.header,
 main {
   padding: 25px;
+  max-width: 800px auto;
 }
-.banner {
+.header {
   text-align: center;
   background-color: aliceblue;
-  padding: 30px;
+  padding: 30px 25px;
+}
+article {
+  margin-top: 20px;
+}
+nav > a {
+  margin: 25px;
+}
+nav > a:link {
+  color: coral;
+}
+nav > a:hover {
+  background-color: bisque;
+}
+nav > a:active {
+  background-color: darkorange;
+}
+article + article {
+  border-top: 3px solid;
+  border-color: coral;
 }
