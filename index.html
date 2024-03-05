@@ -2,17 +2,18 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Johanna Meichelböck">
+    <meta description="html document for my cv">
+    <title>My CV</title>
+    <link rel="stylesheet" href="https://unpkg.com/modern-normalize@latest/modern-normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta author="Johanna Meichelböck">
-    <meta description="html document for my cv">
-    <title>My CV</title>
 </head>
 
 <body>
@@ -20,13 +21,15 @@
         <h1>CV Johanna Meichelböck</h1>
         <p class="profession">Elementary school teacher turned software engineer</p>
         <nav>
-            <a href="#profile">profile</a>
-            <a href="#experiences">experiences</a>
-            <a href="#skills">skills</a>
-            <a href="#contact">contact</a>
+            <a href="#profile" id="nav-link">profile</a>
+            <a href="#experiences" id="nav-link">experiences</a>
+            <a href="#skills" id="nav-link">skills</a>
+            <a href="#contact" id="nav-link">contact</a>
         </nav>
     </header>
+
     <main>
+
         <article id="profile">
             <h2>profile</h2>
             <p>Hey, my name is Hanna. I have a background in teaching and am currently focused on learning: I'm taking
@@ -34,7 +37,8 @@
                 Excited about creating beautiful,
                 functional and <em>accessible</em> websites.</p>
         </article>
-        <article id="experiences">
+
+        <article id="experiences" class="line">
             <h2>experiences</h2>
             <section>
                 <header>
@@ -57,7 +61,8 @@
                 </p>
             </section>
         </article>
-        <article id="skills">
+
+        <article id="skills" class="line">
             <h2>skills</h2>
             <section>
                 <h3>soft skills</h3>
@@ -76,11 +81,12 @@
                 </ul>
             </section>
         </article>
-        <article id="contact">
+
+        <article id="contact" class="line">
             <h2>contact</h2>
             <ol>
                 <li><a href="mailto:haenn@mailbox.org">Email me</a></li>
-                <li> <a href="https://www.linkedin.com/in/johanna-meichelb%C3%B6ck-33bba82b7/">Connect via my
+                <li><a href="https://www.linkedin.com/in/johanna-meichelb%C3%B6ck-33bba82b7/">Connect via my
                         linkedin</a></li>
             </ol>
         </article>
