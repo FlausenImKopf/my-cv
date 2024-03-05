@@ -41,23 +41,23 @@ article {
   margin-top: 20px;
 }
 
-nav > a {
+a {
   margin: 25px;
 }
 
-nav > a:link {
+a:link {
   color: coral;
 }
 
-nav > a:hover {
+a:hover {
   background-color: bisque;
 }
 
-nav > a:active {
+a:active {
   background-color: darkorange;
 }
 
-article + article {
+.line {
   border-top: 3px solid;
   border-color: coral;
 }
