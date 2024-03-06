@@ -1,1 +1,1 @@
-´My CV as a first html and css coding excercise
+First steps in html and css: creating my cv
