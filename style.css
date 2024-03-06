@@ -37,7 +37,7 @@ main {
   padding: 30px 25px;
 }
 
-article {
+.article {
   margin-top: 20px;
 }
 
@@ -47,6 +47,10 @@ a {
 
 a:link {
   color: coral;
+}
+
+a:visited {
+  color: darkorange;
 }
 
 a:hover {
@@ -60,4 +64,8 @@ a:active {
 .line {
   border-top: 3px solid;
   border-color: coral;
+}
+
+.experiences {
+  display: inline-block;
 }
