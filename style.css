@@ -41,24 +41,24 @@ main {
   margin-top: 20px;
 }
 
-a {
+.a {
   margin: 25px;
 }
 
-a:link {
+.a:link {
   color: coral;
 }
 
-a:visited {
-  color: darkorange;
+.a:visited {
+  color: cadetblue;
 }
 
-a:hover {
+.a:hover {
   background-color: bisque;
 }
 
-a:active {
-  background-color: darkorange;
+.a:active {
+  background-color: aliceblue;
 }
 
 .line {
