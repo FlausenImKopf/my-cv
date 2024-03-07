@@ -36,6 +36,7 @@ h2 {
 
 h1 {
   font-size: 1em;
+  padding-top: 2rem;
 }
 
 .profession {
@@ -52,7 +53,6 @@ h1 {
 .header {
   text-align: center;
   background-color: aliceblue;
-  padding: 0.5rem 0.6rem;
   position: relative;
 }
 
@@ -98,12 +98,12 @@ h1 {
 
 .hire-me {
   position: absolute;
-  top: 0rem;
-  right: 0rem;
-  background-color: coral;
+  top: 0;
+  right: 0;
   margin: 1.6rem;
   padding: 0.8rem;
   border-radius: 0.8rem;
+  background-color: coral;
 }
 
 @media screen and (min-width: 786px) {
@@ -115,18 +115,10 @@ h1 {
   }
 }
 
-@media print and (min-width: 786px) {
-  .nav,
-  .hire-me {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 992px) {
   html {
     font-size: 24px;
   }
-
   .hire-me {
     position: fixed;
     top: 0;
@@ -137,5 +129,12 @@ h1 {
   }
   .article {
     margin: 1.6rem;
+  }
+}
+
+@media print {
+  .nav,
+  .hire-me {
+    display: none;
   }
 }
