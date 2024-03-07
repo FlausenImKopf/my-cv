@@ -59,7 +59,6 @@ h1 {
 .main {
   max-width: 65ch;
   position: relative;
-  left: 25vw;
 }
 
 .article {
@@ -105,4 +104,38 @@ h1 {
   margin: 1.6rem;
   padding: 0.8rem;
   border-radius: 0.8rem;
+}
+
+@media screen and (min-width: 786px) {
+  html {
+    font-size: 20px;
+  }
+  .article {
+    margin: 1.2rem;
+  }
+}
+
+@media print and (min-width: 786px) {
+  .nav,
+  .hire-me {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 24px;
+  }
+
+  .hire-me {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 1.6rem;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+  }
+  .article {
+    margin: 1.6rem;
+  }
 }
