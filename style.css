@@ -2,12 +2,13 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
+html {
+  font-size: 16px;
+  font-family: "Dosis", sans-serif;
 }
 
-html {
-  font-family: "Dosis", sans-serif;
+body {
+  margin: 0 auto;
 }
 
 ::selection {
@@ -23,39 +24,52 @@ h3 {
 
 h2 {
   position: relative;
-  right: 15px;
+  right: 1rem;
 }
 
 .profession::after {
   content: "💃";
 }
-
-.header,
-main {
-  padding: 25px;
-  max-width: 800px auto;
+.div {
+  font-size: 4rem;
 }
 
+h1 {
+  font-size: 1em;
+}
+
+.profession {
+  font-size: 0.25em;
+}
+
+.header,
+.main,
 .footer {
-  padding: 25px;
-  max-width: 800px auto;
+  padding: 1.5rem;
+  max-width: 50rem auto;
 }
 
 .header {
   text-align: center;
   background-color: aliceblue;
-  padding: 30px 25px;
+  padding: 0.5rem 0.6rem;
   position: relative;
 }
 
+.main {
+  max-width: 65ch;
+  position: relative;
+  left: 25vw;
+}
+
 .article {
-  margin-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-top: 0.8rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
 }
 
 .a {
-  margin: 25px;
+  margin: 0.6rem;
 }
 
 .a:link {
@@ -85,10 +99,10 @@ main {
 
 .hire-me {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0rem;
+  right: 0rem;
   background-color: coral;
-  margin: 10px;
-  padding: 20px;
-  border-radius: 20px;
+  margin: 1.6rem;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
 }
