@@ -9,11 +9,19 @@ html {
 
 body {
   margin: 0 auto;
+  --text-color: black;
+  --background-color: white;
+  --bold-warm-color: coral;
+  --bold-cool-color: cadetblue;
+  --soft-warm-color: bisque;
+  --soft-cool-color: aliceblue;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 ::selection {
-  background-color: coral;
-  color: aliceblue;
+  background-color: var(--bold-warm-color);
+  color: var(--soft-cool-color);
 }
 
 h1,
@@ -52,7 +60,11 @@ h1 {
 
 .header {
   text-align: center;
-  background-image: linear-gradient(bisque, aliceblue 35%, transparent);
+  background-image: linear-gradient(
+    var(--soft-warm-color),
+    var(--soft-cool-color) 35%,
+    transparent
+  );
   position: relative;
 }
 
@@ -67,7 +79,11 @@ h1 {
 }
 
 .footer {
-  background-image: linear-gradient(transparent, aliceblue 20%, bisque);
+  background-image: linear-gradient(
+    transparent,
+    var(--soft-cool-color) 25%,
+    var(--soft-warm-color)
+  );
 }
 
 .article {
@@ -86,24 +102,24 @@ h1 {
 }
 
 .a:link {
-  color: coral;
+  color: var(--bold-warm-color);
 }
 
 .a:visited {
-  color: cadetblue;
+  color: var(--bold-cool-color);
 }
 
 .a:hover {
-  background-color: bisque;
+  background-color: var(--soft-warm-color);
 }
 
 .a:active {
-  background-color: aliceblue;
+  background-color: var(--soft-cool-color);
 }
 
 .line {
   border-top: 3px solid;
-  border-color: coral;
+  border-color: var(--bold-warm-color);
 }
 
 .experiences {
@@ -117,7 +133,7 @@ h1 {
   margin: 1.6rem;
   padding: 0.8rem;
   border-radius: 0.8rem;
-  background-color: coral;
+  background-color: var(--bold-warm-color);
 }
 
 @media screen and (min-width: 786px) {
@@ -158,5 +174,18 @@ h1 {
   .nav,
   .hire-me {
     display: none;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    --background-color: black;
+    --text-color: white;
+  }
+  .header {
+    background-image: linear-gradient(var(--soft-warm-color), transparent);
+  }
+  .footer {
+    background-image: linear-gradient(transparent, var(--soft-warm-color));
   }
 }
