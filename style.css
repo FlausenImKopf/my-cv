@@ -183,9 +183,24 @@ h1 {
     --text-color: white;
   }
   .header {
-    background-image: linear-gradient(var(--soft-warm-color), transparent);
+    background-image: linear-gradient(var(--bold-cool-color), transparent);
   }
   .footer {
-    background-image: linear-gradient(transparent, var(--soft-warm-color));
+    background-image: linear-gradient(transparent, var(--bold-cool-color));
+  }
+  .a:link {
+    color: var(--bold-warm-color);
+  }
+
+  .a:visited {
+    color: var(--soft-cool-color);
+  }
+
+  .a:hover {
+    background-color: var(--soft-warm-color);
+  }
+
+  .a:active {
+    background-color: var(--bold-cool-color);
   }
 }
