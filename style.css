@@ -75,6 +75,10 @@ h1 {
   }
 }
 
+.header:focus-within .hire-me {
+  transform: scale(1.1);
+}
+
 .nav {
   display: flex;
   flex-direction: column;
@@ -126,7 +130,8 @@ h1 {
 }
 
 .a:focus {
-  background-color: var(--soft-cool-color);
+  background-color: var(--bold-cool-color);
+  outline: none;
 }
 
 .line {
@@ -154,6 +159,8 @@ h1 {
   }
   .article {
     margin: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
   }
   .nav {
     flex-direction: row;
