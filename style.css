@@ -1,24 +1,42 @@
-* {
-  box-sizing: border-box;
+/* || General styles */
+/* dosis-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./dosis-v32-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-html {
+/* lato-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./lato-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  box-sizing: border-box;
   font-size: 16px;
   font-family: "Dosis", sans-serif;
 }
 
 body {
   margin: 0 auto;
-  --text-color: black;
-  --background-color: white;
-  --bold-warm-color: coral;
-  --bold-cool-color: cadetblue;
-  --soft-warm-color: bisque;
-  --soft-cool-color: aliceblue;
+  --text-color: var(--bold-warm-color);
+  --background-color: rgba(245, 243, 209, 0.3);
+  --bold-warm-color: #a44a3f;
+  --bold-cool-color: #f19c79;
+  --soft-warm-color: #d4e09b;
+  --soft-cool-color: #cbdfbd;
   background-color: var(--background-color);
-  color: var(--text-color);
+  color: var(--bold-cool-color);
 }
+/* ................................... */
 
+/* Specific styles */
 ::selection {
   background-color: var(--bold-warm-color);
   color: var(--soft-cool-color);
@@ -59,12 +77,9 @@ h1 {
 }
 
 .header {
+  padding-bottom: 5rem;
   text-align: center;
-  background-image: linear-gradient(
-    var(--soft-warm-color),
-    var(--soft-cool-color) 35%,
-    transparent
-  );
+  background-image: linear-gradient(var(--soft-cool-color) 85%, transparent);
   position: relative;
   transition: 0.7s;
 }
@@ -90,11 +105,7 @@ h1 {
 }
 
 .footer {
-  background-image: linear-gradient(
-    transparent,
-    var(--soft-cool-color) 25%,
-    var(--soft-warm-color)
-  );
+  background-image: linear-gradient(transparent, var(--soft-cool-color));
 }
 
 .article {
@@ -122,11 +133,13 @@ h1 {
 }
 
 .a:hover {
-  background-color: var(--soft-warm-color);
+  background-color: var(--bold-cool-color);
+  color: var(--soft-warm-color);
 }
 
 .a:active {
   background-color: var(--soft-cool-color);
+  color: var(--bold-warm-color);
 }
 
 .a:focus {
@@ -150,7 +163,8 @@ h1 {
   margin: 1.6rem;
   padding: 0.8rem;
   border-radius: 0.8rem;
-  background-color: var(--bold-warm-color);
+  background-color: var(--bold-cool-color);
+  color: var(--soft-cool-color);
 }
 
 @media screen and (min-width: 786px) {
@@ -198,8 +212,8 @@ h1 {
 
 @media screen and (prefers-color-scheme: dark) {
   body {
-    --background-color: black;
-    --text-color: white;
+    --background-color: var(--bold-warm-color);
+    --text-color: var(--soft-cool-color);
   }
   .header {
     background-image: linear-gradient(var(--bold-cool-color), transparent);
@@ -217,9 +231,14 @@ h1 {
 
   .a:hover {
     background-color: var(--soft-warm-color);
+    color: var(--bold-cool-color);
   }
 
   .a:active {
     background-color: var(--bold-cool-color);
+  }
+
+  .line {
+    border-color: var(--soft-cool-color);
   }
 }
